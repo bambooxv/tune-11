@@ -1,39 +1,24 @@
 :root {
     --light:      #dedefc;
     --dark:       #000b18;
-    --primary:    #0951a3;
+    --primary:    #00489a;
     --secondary:  #3570f8;
     --tertiary:   #478bef;
-    --accent1:    #463c9e;
-    --accent2:    #7d66d7;
-    --accent3:    #c3b5e2;
+    --accent1:    #391a6e;
+    --accent2:    #463f63;
+    --accent3:    #a69bd1;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 	.test-colors {
 		color: pink;
-
 	}
-	.Quotation-box {
-		margin-right: 15%;
-		max-width: 400px ;
-		max-height: 400px ;
-		padding: 25px;
-		position: relative;
+	.Tune-Image {
+		width: 100%;
 	}
-	.quotation-bottom {
-		top: -50px;
-		right: 5px;
-	}
-	.guitar-info-page{
-		max-height: 400px;
-		right: 200px;
-		position: relative;
-		margin-right: 20px;
-	}
-	.Review-Section {
-		height: 450px;
+	.dot{
+		margin: 5%;
 	}
 }
 
@@ -42,26 +27,9 @@
 	.test-colors {
 		color:red;
 	}
-	.Quotation-box {
-		margin-right: 15%;
-		margin-left: 15%;
-		width: 300px;
-		max-width: 400px;
-		max-height: 300px;
-		padding: 25px;
-		position: relative;
-	}
-	.quotation-bottom {
-		top: -50px;
-		right: 5px;
-	}
-	.guitar-info-page{
-		right: 80px;
-		max-width: 350px;
-		position: relative;
-	}
-	.Review-Section {
-		height: 450px;
+	.Tune-Image {
+		width: 100%;
+		padding: 10px;
 	}
 }
 
@@ -70,27 +38,9 @@
 	.test-colors {
 		color:yellow;
 	}
-	.Quotation-box {
-		margin-right: 15%;
-		margin-left: 15%;
-		right: -200px;
-		top: -300px;
-		max-width: 600px ;
-		padding: 25px;
-		position: relative;
-	}
-	.quotation-bottom {
-		top: -50px;
-		right: 5px;
-	}
-	.guitar-info-page{
-		max-height: 400px;
-		right: 100px;
-		position: relative;
-		margin-right: 20px;
-	}
-	.Review-Section {
-		height: 450px;
+	.Tune-Image {
+		width: 90%;
+		padding: 20px;
 	}
 }
 
@@ -99,28 +49,9 @@
 	.test-colors {
 		color:green;
 	}
-	.Quotation-box {
-		margin-right: 15%;
-		margin-left: 15%;
-		right: -300px;
-		top: -350px;
-		max-width: 700px ;
-		padding: 25px;
-		position: relative;
-	}
-	.quotation-bottom {
-		top: -50px;
-		right: 5px;
-	}
-	.guitar-info-page{
-		margin-left: 15%;
-		max-height: 440px;
-		right: 100px;
-		position: relative;
-		margin-right: 20px;
-	}
-	.Review-Section {
-		height: 450px;
+	.Tune-Image {
+		width: 90%;
+		padding: 20px;
 	}
 }
 
@@ -130,42 +61,36 @@
 	.test-colors {
 		color:blue;
 	}
-	.Quotation-box {
-		margin-right: 15%;
-		margin-left: 15%;
-		right: -400px;
-		top: -350px;
-		max-width: 700px ;
-		padding: 25px;
-		position: relative;
-	}
-	.quotation-bottom {
-		top: -50px;
-		right: 5px;
-	}
-	.guitar-info-page{
-		margin-left: 15%;
-		max-height: 440px;
-		right: 100px;
-		position: relative;
-		margin-right: 20px;
-	}
-	.Review-Section {
-		height: 450px;
+	.Tune-Image {
+		width: 90%;
+		padding: 20px;
 	}
 }
-.quotation-bottom {
-	transition: width 2s, height 4s;
-	transition-timing-function: ease-in-out;
+.Tune-Box {
+	background-color: var(--accent1);
+	margin: auto;
+	
 }
-.trans1 :nth-child(6) {
-	transition: width 2s, height 4s;
-	transition-timing-function: ease-in-out;
+.Tune-Image {
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
 }
-.Review-Section {
-	background-image: url('../images/music-studio-background.png');
-	background-position: center;
+.Instrument-Box {
+	text-align: center;
+	color: white;
+	 margin: auto;
+	 width: 100%;
+	 padding: 10px;
 }
-.Quotation-box {
-	background-color: var(--light);
-}
+.dot {
+	width: 150px;
+	height: 150px;
+	background-color: var(--accent1);
+	border-radius: 50%;
+	display: inline-block;
+  }
+  .Instrument-Icon {
+	font-size: 5.5em;
+	text-align: center;
+  }

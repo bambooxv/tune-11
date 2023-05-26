@@ -12,38 +12,51 @@
     <title>Electric 11</title>
   </head>
   <body>
-    <!-- <div class="container">
-      <div class="row no-gutters">
-        <div class="col-sm">
-          <i class="bi bi-quote" ></i>
-        </div>
-        <div class="col-sm">
-          <p class="">
-            Hands down the greatest musician of the 21st centery. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            <br>- Chris Motionless
-          </p>
-        </div>
-        <div class="col-sm">
-          <i class="bi bi-quote"></i>
-        </div>
-      </div>
-    </div> -->
-    <section class="Review-Section">
-      <div class="container trans1">
-        <div class="row align-items-center">
-          <div class="col-4 col-md-auto">
-            <img src="./images/guitar.png" class="guitar-info-page">
-          </div>
-          <div class="col col-md-auto">
-            <div class="media Quotation-box">
-              <i class="bi bi-quote align-self-start" ></i>
-              <div class="media-body">
-                  <p class="mt-2 quotation-information">
-                  Hands down the greatest musician of the 21st centery. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  </p>
-                  <p>- Chris Motionless </p>
+    <!--
+        To obtain affect, Tune box does not have any width or height adjustments
+          Tune image has a global affect of auto margin-left,right and display block
+            Width is adjusted percentage wise(lower slightly the bigger the screen)
+    -->
+    <section>
+      <div class="Tune-Box">
+        <img src="./images/music-studio-background.png" class="Tune-Image">
+      </div> 
+    </section>
+<!-- 
+  used col-md-3 to make mid size and higher split into 4 columns(12 columns/3)
+  used col-6 to make small size and lower split into 2 columns(12 columns/3)
+  div class dot is the circle icon with round borders
+  center align text fixes majority of the problems
+
+-->
+    <section style="background-color: var(--accent2);">
+      <div class="container-fluid">
+        <div>
+          <div class="Instrument-Box row justify-content-center">
+            <div class="col-md-3 col-6">
+                <div class="dot">
+                  <img src="./svg/guitar.svg" width="110px"></img>
+                </div>
+              <h4>Strings</h4>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="dot">
+                  <img src="./svg/drum.svg"></img>
+                </div>
+              <h4>Percussion</h4>
+            </div>
+            <div class="w-100 d-block d-md-none"></div>
+            <div class="col-md-3 col-6">
+              <div class="dot">
+              <i class="Instrument-Icon bi bi-bar-chart-fill" ></i>
               </div>
-              <i class="bi bi-quote flip-horizontal quotation-bottom align-self-end"></i>
+              <h4>Synth</h4>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="dot">
+                  <img src="./svg/bullhorn.svg"></img>
+                </div>
+              <h4>Vocals</h4>
             </div>
           </div>
         </div>
