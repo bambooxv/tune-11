@@ -5,56 +5,83 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela-Round">
-    <title>Electric 11</title>
+	  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	  <link href="css/styles.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela-Round">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- Animate on scroll 1/2 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Tune 11</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 our-footer2 ">
+      <div class="shadow-3d"></div>
+        <div class="collapse navbar-collapse shadow-3d" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item navbar-brand ms-lg-5 p-3">
+              <h1 class="Logo-Design m-0 text-white"><i class="bi bi-music-note fs-1 text-white me-3"></i>Tune 11</h1>
+            </a>
+              <a class="nav-item nav-link text-white">Home</a>
+              <a class="nav-item nav-link text-white">Our Studio</a>
+              <a class="nav-item nav-link text-white">Our Values</a>
+              <a class="nav-item nav-link text-white ">Client Satification</a>
+              <a class=" nav-item nav-link nav-contact bknew-primary text-white px-5 ms-lg-5 shadow-3d">Contact <i class="bi bi-arrow-right"></i></a>
+          </div>
+      </div>
+  </nav>
     <!--
         To obtain affect, Tune box does not have any width or height adjustments
           Tune image has a global affect of auto margin-left,right and display block
             Width is adjusted percentage wise(lower slightly the bigger the screen)
     -->
     <section>
-      <div class="Tune-Box">
-        <img src="./images/music-studio-background.png" class="Tune-Image">
-      </div> 
+        <div class="Tune-Box first-section">
+          <div class="Image-Margin d-flex justify-content-center">
+            <img src="./images/music-studio-background.png" class="shadow-3d Image-Sizing">
+          </div>
+        </div>
     </section>
 <!-- 
   used col-md-3 to make mid size and higher split into 4 columns(12 columns/3)
-  used col-6 to make small size and lower split into 2 columns(12 columns/3)
+  used col-6 to make small size and lower split into 2 columns(12 columns/2)
+    See lower comment for more details
   div class dot is the circle icon with round borders
   center align text fixes majority of the problems
-
+  onmouseover uses function AnimateIcon with the number related to which icon will be animated
+  Animate css is what was used as a plugin
 -->
-    <section style="background-color: var(--accent2);">
-      <div class="container-fluid">
+    <section>
+      <div class="container-fluid shadow-3d second-section">
         <div>
           <div class="Instrument-Box row justify-content-center">
             <div class="col-md-3 col-6">
-                <div class="dot">
-                  <img src="./svg/guitar.svg" width="110px"></img>
+                <div class="dot dot1" onmouseover="AnimateIcon(1)">
+                  <img src="./svg/guitar.svg" width="110px" class="Instrument-Icon2"></img>
                 </div>
               <h4>Strings</h4>
             </div>
             <div class="col-md-3 col-6">
-                <div class="dot">
-                  <img src="./svg/drum.svg"></img>
+                <div class="dot dot2" onmouseover="AnimateIcon(2)">
+                  <img src="./svg/drum.svg" width="110px" class="Instrument-Icon2"></img>
                 </div>
               <h4>Percussion</h4>
             </div>
+            <!--
+              Disables the column split on all sizes except mid and higher
+            -->
             <div class="w-100 d-block d-md-none"></div>
             <div class="col-md-3 col-6">
-              <div class="dot">
-              <i class="Instrument-Icon bi bi-bar-chart-fill" ></i>
+              <div class="dot dot3" onmouseover="AnimateIcon(3)">
+                <i class="Instrument-Icon bi bi-bar-chart-fill" ></i>
               </div>
               <h4>Synth</h4>
             </div>
             <div class="col-md-3 col-6">
-                <div class="dot">
-                  <img src="./svg/bullhorn.svg"></img>
+                <div class="dot dot4" onmouseover="AnimateIcon(4)" >
+                  <img src="./svg/bullhorn.svg" class="Instrument-Icon2" width="110px"></img>
                 </div>
               <h4>Vocals</h4>
             </div>
@@ -62,11 +89,103 @@
         </div>
       </div>
     </section>
-    <p class="test-colors" >extra small pink, Mobile red, tablet yellow, Desktop Green, large desktop blue</p>
+    <!-- 
+  used col-6 to make mid screen and higher into 2 columns(12 columns/2)
+
+
+
+-->
+    <section>
+      <div class="container-fluid shadow-3d third-section">
+        <div class="row justify-content-center  d-flex align-items-center" data-aos="fade-right" data-aos-delay="260">
+          <div class="col-md-6">
+            <div class="Image-Margin">
+              <img src="./images/Studio-stock-1.jpg" width="100%" class="shadow-3d">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Text-block-1">
+            <h1>Our studio</h1>
+            <p style="text-indent: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="Text-block-1" data-aos="fade-right" data-aos-delay="280"> 
+          <h1>Our Values</h1>
+          <p style="text-indent: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+        <div class="row justify-content-center  d-flex align-items-center" data-aos="fade-right" data-aos-delay="300">
+          <div class="col-md-6">
+            <div class="Text-block-1">
+            <h1>Client Satification</h1>
+            <p style="text-indent: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Image-Margin">
+              <img src="./images/Crew.webp" width="100%" class="shadow-3d">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Start -->
+    <div class="container-fluid py-3 our-footer">
+      <div class="container">
+          <div class="slider row g-5">
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Get In Touch</h5>
+                  <p class="mb-2"><i class="bi bi-geo-alt new-primary me-2"></i>Main Street, New York, USA</p>
+                  <p class="mb-2"><i class="bi bi-envelope-open new-primary me-2"></i>Electric11@gmail.com</p>
+                  <p class="mb-0"><i class="bi bi-telephone new-primary me-2"></i>+525 234 4230</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Newsletter</h5>
+                  <form action="">
+                      <div class="input-group">
+                          <input type="text" class="form-control p-3" placeholder="Your Email">
+                          <button class="btn bknew-primary">Sign Up</button>
+                      </div>
+                  </form>
+              </div>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase mt-4 mb-3">Follow Us</h6>
+          <div class="d-flex">
+              <a class="btn new-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+              <a class="btn new-primary btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="btn new-primary btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+              <a class="btn new-primary btn-square" href="#" ><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid text-white-50 py-2 our-footer2">
+      <div class="container">
+          <div class="row g-2">
+              <div class="text-center">
+                  <p class="mb-md-0">&copy; <a class="text-white" href="#">Electric 11</a>. All Rights Reserved. </p>
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+              </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Footer End -->
+    <!-- <p class="test-colors" >extra small pink, Mobile red, tablet yellow, Desktop Green, large desktop blue</p> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Animate on scroll 2/2-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- My script-->
+    <script src="./js/script.js"></script>
   </body>
 </html>
